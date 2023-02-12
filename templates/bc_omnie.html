@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% extends "businesscard_parent.html" %}
-        {% block head %}
-        {% endblock %}
-    </head>
+{% extends "businesscard_parent.html" %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
     <body>
-        {% extends "businesscard_parent.html" %}
         {% block content %}
-        {% endblock %}
         <h1 class="o-mnie">O mnie</h1>
         <h2><strong>imię: </strong>Zara</h2>
         <h2><strong>nazwisko: </strong>Pug</h2>
+        {% endblock %}
         
     </body>
 </html>

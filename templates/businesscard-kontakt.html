@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% extends "businesscard_parent.html" %}
-        {% block head %}
-        {% endblock %}
-    </head>
+{% extends "businesscard_parent.html" %}
+{% block head %}
+{% endblock %}
     <body>
-        {% extends "businesscard_parent.html" %}
         {% block content %}
-        {% endblock %}
         <h1 class="o-mnie">Kontakt</h1>
         <ul><h2>
             <li>email: zara.pug.yt@gmail.com</li>
@@ -19,5 +15,7 @@
             <textarea cols="50" rows="4"></textarea>
             <input type="submit" value="Prześlij">
         </form>
+        {% endblock %}
+
     </body>
 </html>

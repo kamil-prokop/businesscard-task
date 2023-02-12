@@ -9,10 +9,11 @@
     </head>
 
     <body>
-        {% block content %}
+        
         <h1 class="intro">Witaj na mojej stronie internetowej</h1>
         <img src="https://uploads.kodilla.com/bootcamp/py/08/code.jpg" alt="fotka" title="Code">
-        {% endblock %}
+        <div id="content">{% block content %}{% endblock %}</div>
+        
     </body>
 
 </html>
