@@ -4,13 +4,19 @@ from flask import request, redirect
 
 app = Flask(__name__)
 
+@app.route('/hello/memy')
+def memy():
+    my_name = "John"
+    return f'Hello, {my_name}!'
+
+
 @app.route('/mypage/me')
-def mypage(me):
-    return render_template("businesscard_omnie.html")
+def me():
+    return render_template("bc_omnie.html")
 
 
 @app.route('/mypage/contact', methods = ["GET", "POST"])
-def mypage(contact):
+def contact():
     if request.method == "GET":
         return render_template("businesscard_kontakt.html")
     elif request.method == "POST":
