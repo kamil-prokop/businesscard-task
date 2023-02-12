@@ -18,9 +18,7 @@ def me():
 @app.route('/mypage/contact', methods = ["GET", "POST"])
 def contact():
     if request.method == "GET":
-        return render_template("businesscard_kontakt.html")
+        return render_template("bc_kontakt.html")
     elif request.method == "POST":
-        print("To był komunikat POST")
-        some_topic = request.form.get('some_topic')
-        print(request.form)
-        return redirect
+        print('text_to_send')
+        return redirect('/mypage/contact')
