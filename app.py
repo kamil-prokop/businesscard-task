@@ -9,7 +9,12 @@ def mypage(me):
     return render_template("businesscard_omnie.html")
 
 
-@app.route('/mypage/contact')
+@app.route('/mypage/contact', methods = ["GET", "POST"])
 def mypage(contact):
-    return render_template("businesscard_kontakt.html")
-
+    if request.method == "GET":
+        return render_template("businesscard_kontakt.html")
+    elif request.method == "POST":
+        print("To był komunikat POST")
+        some_topic = request.form.get('some_topic')
+        print(request.form)
+        return redirect
